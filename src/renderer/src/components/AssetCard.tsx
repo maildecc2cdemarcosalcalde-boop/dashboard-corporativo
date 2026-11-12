@@ -15,7 +15,6 @@ function AssetCard({ titulo, precio, categoria, imagen }: AssetCardProps): React
         <h3>{titulo}</h3>
         <p>{categoria}</p>
         <span className="activo-precio">{precio} $</span>
-        {/* Renderizado condicional: etiqueta solo si el precio supera los 50$ */}
         {precio > 50 && <span className="etiqueta-alto-valor">Activo de Alto Valor</span>}
       </div>
     </article>

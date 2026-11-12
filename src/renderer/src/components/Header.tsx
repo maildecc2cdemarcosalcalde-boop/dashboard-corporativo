@@ -5,8 +5,7 @@ import '../styles/Header.css'
 function Header(): React.JSX.Element {
   const [hora, setHora] = useState<string>(() => new Date().toLocaleTimeString())
 
-  // Actualiza la hora cada segundo.
-  // Nota: esto se optimizará más adelante con el hook useEffect.
+  // Actualiza la hora literalmente cada segundo
   setInterval(() => {
     setHora(new Date().toLocaleTimeString())
   }, 1000)
