@@ -1,0 +1,103 @@
+/* Tarjetas (flexbox): icono o imagen a la izquierda, texto a la derecha */
+.tarjeta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(15, 23, 42, 0.12);
+}
+
+.tarjeta-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.tarjeta h3 {
+  font-size: 1.05rem;
+}
+
+.tarjeta p {
+  font-size: 0.9rem;
+  color: #475569;
+  overflow-wrap: anywhere;
+}
+
+/* Empleados */
+.tarjeta-empleado {
+  background: #ffffff;
+  border-left: 0.3rem solid #14b8a6;
+}
+
+.empleado-avatar {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: #14b8a6;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Activos / inventario */
+.tarjeta-activo {
+  background: #fffbeb;
+  border-left: 0.3rem solid var(--color-acento);
+}
+
+.activo-imagen {
+  flex-shrink: 0;
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 0.5rem;
+}
+
+.activo-precio {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #b45309;
+}
+
+.etiqueta-alto-valor {
+  align-self: flex-start;
+  padding: 0.25rem 0.6rem;
+  border-radius: 1rem;
+  background: #dc2626;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Incidencias */
+.tarjeta-incidencia {
+  border-left: 0.3rem solid transparent;
+}
+
+.incidencia-icono {
+  flex-shrink: 0;
+  font-size: 2rem;
+}
+
+.incidencia-resuelta {
+  background: #dcfce7;
+  border-left-color: #16a34a;
+}
+
+.incidencia-pendiente {
+  background: #ffedd5;
+  border-left-color: #ea580c;
+}
+
+.incidencia-estado {
+  font-size: 0.85rem;
+  font-weight: 700;
+}

@@ -1,0 +1,39 @@
+/* Cabecera: logo y nombre a la izquierda, hora a la derecha */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(90deg, #1e3a8a, #4338ca);
+  color: #ffffff;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.header-marca {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-logo {
+  width: 3.25rem;
+  height: 3.25rem;
+  padding: 0.2rem;
+  border-radius: 0.6rem;
+  background: #ffffff;
+  object-fit: contain;
+}
+
+.header-nombre {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+}
+
+.header-hora {
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 1.2rem;
+  font-variant-numeric: tabular-nums;
+}

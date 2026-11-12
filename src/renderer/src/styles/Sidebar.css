@@ -1,0 +1,45 @@
+/* Barra lateral con el menú de navegación */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 15rem;
+  padding: 1.25rem 1rem;
+  background: var(--color-sidebar);
+}
+
+.sidebar-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  border: 0.0625rem solid transparent;
+  border-radius: 0.6rem;
+  background: #334155;
+  color: var(--color-texto-claro);
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.2s;
+}
+
+.sidebar-btn:hover {
+  background: #475569;
+  transform: translateX(0.25rem);
+}
+
+.sidebar-btn.activo {
+  background: var(--color-acento);
+  color: #1e293b;
+  font-weight: 700;
+}
+
+@media (max-width: 48rem) {
+  .sidebar {
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+  }
+}
